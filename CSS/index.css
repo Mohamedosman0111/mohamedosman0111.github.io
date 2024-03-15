@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--words-color);
+}
+body {
+  background-color: var(--back-color);
+}
+:root {
+  --words-color: white;
+  --back-color: #093A32;
+  --nonLight_word: #cbcbcb7d;
+}
+ul {
+  list-style: none;
+}
+.rot {
+  rotate: 180deg;
+}
+.border {
+  background-color: var(--words-color);
+  width: 100%;
+  height: 1px;
+}
+/* photo sec */
+.photo{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  background-image: url(../photos/photo_2024-01-24_11-05-37.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo::after {
+  content: "";
+  bottom: 0px;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(9,58,50,-0.207247864966299) 40%, rgba(9,58,50,1) 100%);
+}
+.photo_holder {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+.button_style {
+  top: 10px; 
+  left: 10px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #093A32;
+}
+.button_style a {
+  color: white;
+  text-decoration: none;
+}
+/* links sec */
+.holder{
+  padding-bottom: 15px;
+  background-color: var(--back-color);
+}
+.holder .links_holder a{
+  text-decoration: none;
+  color: var(--words-color);
+}
+.holder .links_holder {
+  justify-content: center;
+}
+.holder .links_holder .link {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--words-color);
+}
+
+/* Social */
+.social_holder .social {
+  display: flex;
+  align-items: center;
+}
+.social_holder .social i {
+  font-size: 25px;
+  padding-right: 15px;
+}
+.social_holder .social a {
+  text-decoration: none;
+  color: var(--words-color);
+}
+.social_holder .social a:hover {
+  color: var(--nonLight_word);
+}
+/* timing */
+.coloring {
+  margin: 30px 0px;
+}
+.coloring .container {
+  display: flex;
+  justify-content: center;
+}
+.timing {
+  width: 85%;
+  padding: 20px;
+  color: black;
+  border-radius: 6px;
+  background-color: var(--words-color);
+}
+.timing ul li,
+.timing span {
+  color: black;
+}
+.timing ul li {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .location_socail */
+.location_socail {
+  display: flex;
+}
+.location_socail i {
+  color: white;
+  font-size: 26px;
+  padding-right: 15px;
+}
+.location_socail a{
+  color: white;
+  text-decoration: none;
+}
+.socail span {
+  font-size: 20px;
+}

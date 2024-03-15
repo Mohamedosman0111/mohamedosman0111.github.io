@@ -1,0 +1,25 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color:var(--words-color);
+  background-color: var(--back-color);
+}
+:root {
+  --back-color: #093A32;
+  --words-color: white;
+  --nonLight_word: #ffffff42;
+}
+.border {
+  width: 100%;
+  height: 1px;
+  background-color: var(--words-color);
+}
+.nonlightColor {
+  color: var(--nonLight_word);
+}
+/* drinkBox */
+.drinkBox {
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: 1px solid var(--words-color);
+}
